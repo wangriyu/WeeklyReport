@@ -3,7 +3,8 @@
 ```bash
 $ cd antd-ui
 $ npm install
-$ npm run start:no-mock
+// dev npm run start:no-mock
+$ npm run build
 
 $ cd ../beego-server
 $ go mod vendor
