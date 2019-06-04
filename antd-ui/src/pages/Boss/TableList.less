@@ -1,0 +1,56 @@
+.table {
+  table-layout: fixed;
+
+  :global {
+    .ant-table-tbody > tr > td,
+    .ant-table-thead > tr > th {
+      height: 36px;
+      text-align: center;
+    }
+  }
+}
+
+.smallTable {
+  table-layout: fixed;
+
+  :global {
+    .ant-table-column-title {
+      font-size: 8px;
+    }
+
+    .ant-table-thead {
+      font-size: 8px;
+    }
+
+    .ant-table-thead > tr > th {
+      padding: 2px 2px !important;
+      word-break: break-all;
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 0 !important;
+      word-break: break-all;
+    }
+
+    .antd-pro-pages-admin-table-list-smallTable .ant-table-column-title {
+      font-size: 8px;
+    }
+
+    .ant-table-tbody {
+      font-size: 8px;
+      &::-webkit-scrollbar {
+        height: 1px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.expandedTable {
+  :global {
+    .ant-table-tbody > tr > td,
+    .ant-table-thead > tr > th {
+      background: #fff;
+    }
+  }
+}

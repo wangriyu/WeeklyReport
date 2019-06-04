@@ -1,0 +1,12 @@
+{
+  "name": "WeeklyServer",
+  "script": "beego-server",
+  "error_file": "/data/logs/pm2/WeeklyServer/error.log",
+  "out_file": "/data/logs/pm2/WeeklyServer/out.log",
+  "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
+  "instances": 1,
+  "exec_interpreter": "none",
+  "exec_mode": "fork",
+  "merge_logs": true,
+  "max_memory_restart": "1024M"
+}

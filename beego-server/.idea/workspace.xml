@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e471e40a-4136-4007-8c64-ce60527f1b27" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routers/router.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>'0'</find>
+      <find>UNIQUE</find>
+      <find>department</find>
+      <find>error</find>
+      <find>QueryRows</find>
+      <find>GeneratePassword</find>
+      <find>logs</find>
+      <find>Error</find>
+      <find>ParseInLocation</find>
+      <find>AppConfig</find>
+      <find>salt</find>
+      <find>status</find>
+      <find>DateTime</find>
+      <find>s</find>
+      <find>JoinDate</find>
+      <find>&gt;=</find>
+      <find>MonthlyResult</find>
+      <find>ID</find>
+      <find>currentUser</find>
+      <find>CreateStaff</find>
+      <find>2006-01-02</find>
+      <find>WeeklyRequest</find>
+      <find>INSERT INTO</find>
+      <find>DELETE</find>
+      <find>CHARSET</find>
+      <find>UPDATE</find>
+      <find>Staff</find>
+      <find>BossStatus</find>
+      <find>COLLATE=utf8_bin</find>
+      <find>Router</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>0</replace>
+      <replace>20060102</replace>
+      <replace>),</replace>
+      <replace>NSRouter</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/models</dir>
+      <dir>$PROJECT_DIR$/controllers</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/controllers/Staff.go" />
+        <option value="$PROJECT_DIR$/controllers/register.go" />
+        <option value="$PROJECT_DIR$/controllers/codes.go" />
+        <option value="$PROJECT_DIR$/controllers/default.go" />
+        <option value="$PROJECT_DIR$/controllers/department.go" />
+        <option value="$PROJECT_DIR$/controllers/codes/codes.go" />
+        <option value="$PROJECT_DIR$/models/department.go" />
+        <option value="$PROJECT_DIR$/conf/app.conf" />
+        <option value="$PROJECT_DIR$/models/base.go" />
+        <option value="$PROJECT_DIR$/controllers/staff.go" />
+        <option value="$PROJECT_DIR$/deploy/tables.sql" />
+        <option value="$PROJECT_DIR$/controllers/admin.go" />
+        <option value="$PROJECT_DIR$/models/admin.go" />
+        <option value="$PROJECT_DIR$/models/staff.go" />
+        <option value="$PROJECT_DIR$/deploy/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/deploy/mysql-dump/tables.sql" />
+        <option value="$PROJECT_DIR$/deploy/Dockerfile" />
+        <option value="$PROJECT_DIR$/deploy/mysql/setup.sh" />
+        <option value="$PROJECT_DIR$/deploy/mysql/privileges.sql" />
+        <option value="$PROJECT_DIR$/deploy/mysql/tables.sql" />
+        <option value="$PROJECT_DIR$/deploy/mysql/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/deploy/mysql/Dockerfile" />
+        <option value="$PROJECT_DIR$/pm2.json" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/routers/router.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="beego-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beego-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beego-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beego-server" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beego-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deploy" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deploy/mysql" />
+      <recent name="$PROJECT_DIR$/deploy/mysql-dump" />
+      <recent name="$PROJECT_DIR$/controllers/codes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12332112" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="TODO" order="3" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.35935828" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>direct</proxy>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/index.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.sum">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/modules.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/github.com/astaxie/beego@v1.11.1/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/github.com/astaxie/beego@v1.11.1/orm/db_alias.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="206" column="43" selection-start-line="206" selection-start-column="33" selection-end-line="206" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/run.alert.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/run.critical.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/run.debug.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/run.emergency.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/run.info.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="77" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/run.notice.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/run.warning.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/github.com/astaxie/beego@v1.11.1/orm/models_fields.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1769">
+          <caret line="223" column="5" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/register.go" />
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/github.com/json-iterator/go@v1.1.6/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/time/zoneinfo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/github.com/astaxie/beego@v1.11.1/controller.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="351" column="21" selection-start-line="351" selection-start-column="21" selection-end-line="351" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/golang.org/x/crypto@v0.0.0-20190308221718-c2843e01d9a2/scrypt/scrypt.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="215" column="48" selection-start-line="215" selection-start-column="43" selection-end-line="215" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/default.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/department.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/github.com/json-iterator/go@v1.1.6/reflect_json_number.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/github.com/astaxie/beego@v1.11.1/logs/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="603" column="17" selection-start-line="603" selection-start-column="17" selection-end-line="603" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/time/format.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="781" column="5" selection-start-line="781" selection-start-column="5" selection-end-line="781" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/codes/codes.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/run.log">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/run.error.log">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/github.com/astaxie/beego@v1.11.1/orm/orm.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/database/sql/sql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="3067" column="16" selection-start-line="3067" selection-start-column="4" selection-end-line="3067" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Gopath/pkg/mod/github.com/astaxie/beego@v1.11.1/orm/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="339" column="18" selection-start-line="339" selection-start-column="18" selection-end-line="339" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/department.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/base.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/strings/strings.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="802">
+          <caret line="418" column="11" selection-start-line="418" selection-start-column="11" selection-end-line="418" selection-end-column="11" />
+          <folding>
+            <element signature="e#21#157#0" />
+            <element signature="e#180#208#0" />
+            <element signature="n#!!block;n#AuditList#0" />
+            <element signature="e#303#413#0" />
+            <element signature="e#419#480#0" />
+            <element signature="n#!!block;n#StaffList#0" />
+            <element signature="e#622#657#1" />
+            <element signature="e#693#695#0" />
+            <element signature="e#776#783#0" />
+            <element signature="e#684#794#0" />
+            <element signature="e#800#861#0" />
+            <element signature="n#!!block;n#SetRole#0" />
+            <element signature="e#1050#1169#0" />
+            <element signature="e#1203#1310#0" />
+            <element signature="e#1316#1376#0" />
+            <element signature="e#2999#3135#0" />
+            <element signature="e#3219#3355#0" />
+            <element signature="n#!!block;n#AfterSaleMonthly#0" />
+            <element signature="e#3769#3980#1" />
+            <element signature="e#4069#4203#0" />
+            <element signature="e#4287#4421#0" />
+            <element signature="e#4496#4612#0" />
+            <element signature="e#4618#4755#0" />
+            <element signature="e#4642#4695#0" />
+            <element signature="n#!!block;n#DevelopMonthly#0" />
+            <element signature="e#4829#5040#1" />
+            <element signature="e#5129#5261#0" />
+            <element signature="e#5345#5477#0" />
+            <element signature="e#5550#5664#0" />
+            <element signature="e#5670#5807#0" />
+            <element signature="e#5694#5747#0" />
+            <element signature="n#!!block;n#ProductMonthly#0" />
+            <element signature="e#5881#6092#1" />
+            <element signature="e#6181#6313#0" />
+            <element signature="e#6397#6529#0" />
+            <element signature="e#6602#6716#0" />
+            <element signature="e#6722#6859#0" />
+            <element signature="e#6746#6799#0" />
+            <element signature="n#!!block;n#OfficeMonthly#0" />
+            <element signature="e#6932#7143#1" />
+            <element signature="e#7232#7363#0" />
+            <element signature="e#7447#7578#0" />
+            <element signature="e#7650#7763#0" />
+            <element signature="e#7769#7906#0" />
+            <element signature="e#7793#7846#0" />
+            <element signature="n#!!block;n#FinanceMonthly#0" />
+            <element signature="e#7980#8191#1" />
+            <element signature="e#8280#8412#0" />
+            <element signature="e#8496#8628#0" />
+            <element signature="e#8701#8815#0" />
+            <element signature="e#8821#8958#0" />
+            <element signature="e#8845#8898#0" />
+            <element signature="n#!!block;n#AnnuallyList#0" />
+            <element signature="e#9686#9799#0" />
+            <element signature="e#9805#9866#0" />
+            <element signature="n#!!block;n#AnnuallyItemList#0" />
+            <element signature="e#10023#10140#0" />
+            <element signature="e#10146#10207#0" />
+            <element signature="n#!!block;n#AddAnnuallyPlan#0" />
+            <element signature="e#10696#10725#1" />
+            <element signature="e#10776#10903#0" />
+            <element signature="e#10919#11026#0" />
+            <element signature="e#11032#11092#0" />
+            <element signature="n#!!block;n#AddAnnuallyPlan#1" />
+            <element signature="e#11343#11473#0" />
+            <element signature="e#11541#11656#0" />
+            <element signature="e#11662#11721#0" />
+            <element signature="n#!!block;n#AddAnnuallyPlan#1" />
+            <element signature="e#11276#11307#1" />
+            <element signature="e#11358#11485#0" />
+            <element signature="e#11541#11656#0" />
+            <element signature="e#11662#11721#0" />
+            <element signature="n#!!block;n#UpdateAnnuallyPlan#1" />
+            <element signature="e#12502#12632#0" />
+            <element signature="e#12687#12805#0" />
+            <element signature="e#12811#12871#0" />
+            <element signature="n#!!block;n#DeleteAnnuallyItem#0" />
+            <element signature="e#13033#13151#0" />
+            <element signature="e#13157#13217#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/admin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="99" column="28" lean-forward="true" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+          <folding>
+            <element signature="e#16#117#0" />
+            <element signature="e#139#217#0" />
+            <element signature="n#!!block;n#QueryAuditList#0" />
+            <element signature="e#441#464#0" />
+            <element signature="n#!!block;n#QueryStaffList#0" />
+            <element signature="e#699#716#0" />
+            <element signature="e#759#776#0" />
+            <element signature="e#802#1350#0" />
+            <element signature="e#824#1071#0" />
+            <element signature="e#862#1001#0" />
+            <element signature="e#1077#1347#0" />
+            <element signature="e#1115#1257#0" />
+            <element signature="e#1356#1807#0" />
+            <element signature="e#1378#1583#0" />
+            <element signature="e#1416#1529#0" />
+            <element signature="e#1589#1804#0" />
+            <element signature="e#1823#1846#0" />
+            <element signature="e#2693#2745#0" />
+            <element signature="e#2825#2842#0" />
+            <element signature="e#3026#3164#0" />
+            <element signature="n#!!block;n#QueryMarketingMonthly#0" />
+            <element signature="e#3468#3490#0" />
+            <element signature="e#3504#3552#0" />
+            <element signature="e#3574#4064#0" />
+            <element signature="e#3590#3671#0" />
+            <element signature="e#3851#3875#0" />
+            <element signature="e#3943#4061#0" />
+            <element signature="e#4006#4057#0" />
+            <element signature="e#4163#4342#0" />
+            <element signature="n#!!block;n#QueryMarketingMonthlyByID#0" />
+            <element signature="e#4673#4698#0" />
+            <element signature="e#4806#5281#0" />
+            <element signature="n#!!block;n#QueryTechSupportMonthly#0" />
+            <element signature="e#5661#5685#0" />
+            <element signature="n#!!block;n#QueryAfterSaleMonthly#0" />
+            <element signature="e#6158#6182#0" />
+            <element signature="n#!!block;n#QueryDevelopMonthly#0" />
+            <element signature="e#6638#6662#0" />
+            <element signature="n#!!block;n#QueryProductMonthly#0" />
+            <element signature="e#7083#7107#0" />
+            <element signature="n#!!block;n#QueryOfficeMonthly#0" />
+            <element signature="e#7548#7572#0" />
+            <element signature="n#!!block;n#QueryFinanceMonthly#0" />
+            <element signature="e#8003#8027#0" />
+            <element signature="e#8140#8411#0" />
+            <element signature="e#8434#8553#0" />
+            <element signature="e#8569#8797#0" />
+            <element signature="e#8817#8934#0" />
+            <element signature="n#!!block;n#QueryWeeklyPlan#0" />
+            <element signature="e#8999#9062#1" />
+            <element signature="e#9204#9227#0" />
+            <element signature="e#9230#9275#1" />
+            <element signature="e#9397#9420#0" />
+            <element signature="n#!!block;n#QueryWeeklySummary#0" />
+            <element signature="e#9627#9702#1" />
+            <element signature="e#9856#9882#0" />
+            <element signature="e#9885#9933#1" />
+            <element signature="e#10063#10089#0" />
+            <element signature="e#10250#10391#0" />
+            <element signature="n#!!block;n#QueryAnnuallyList#0" />
+            <element signature="e#10611#10636#0" />
+            <element signature="n#!!block;n#AddAnnuallyPlan#0" />
+            <element signature="e#10859#10879#0" />
+            <element signature="n#!!block;n#UpdateAnnuallyPlan#0" />
+            <element signature="e#11117#11134#0" />
+            <element signature="e#11269#11653#0" />
+            <element signature="n#!!block;n#QueryAnnuallyItemList#0" />
+            <element signature="e#11930#11955#0" />
+            <element signature="n#!!block;n#AddAnnuallyPlanItem#0" />
+            <element signature="e#12342#12362#0" />
+            <element signature="n#!!block;n#UpdateAnnuallyItem#0" />
+            <element signature="e#12774#12791#0" />
+            <element signature="n#!!block;n#DeleteAnnuallyItem#0" />
+            <element signature="e#13079#13096#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/staff.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="265" column="15" selection-start-line="265" selection-start-column="9" selection-end-line="265" selection-end-column="15" />
+          <folding>
+            <element signature="e#16#221#0" />
+            <element signature="e#223#342#0" />
+            <element signature="e#554#987#0" />
+            <element signature="e#1000#1449#0" />
+            <element signature="e#2171#2191#0" />
+            <element signature="n#!!block;n#CheckLogin#0" />
+            <element signature="n#!!block;n#QueryStaffByID#0" />
+            <element signature="n#!!block;n#UpdatePass#0" />
+            <element signature="n#!!block;n#HardDelete#0" />
+            <element signature="n#!!block;n#SoftDelete#0" />
+            <element signature="n#!!block;n#SetTechSupport#0" />
+            <element signature="n#!!block;n#SetAfterSale#0" />
+            <element signature="n#!!block;n#SetDevelop#0" />
+            <element signature="n#!!block;n#SetProduct#0" />
+            <element signature="n#!!block;n#SetOffice#0" />
+            <element signature="n#!!block;n#SetFinance#0" />
+            <element signature="n#!!block;n#AddWeeklySummary#0" />
+            <element signature="n#!!block;n#AddWeeklyPlan#0" />
+            <element signature="n#!!block;n#VerifyRole#0" />
+            <element signature="n#!!block;n#GeneratePassword#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/staff.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="214" column="19" selection-start-line="214" selection-start-column="19" selection-end-line="214" selection-end-column="19" />
+          <folding>
+            <element signature="e#21#149#0" />
+            <element signature="e#172#200#0" />
+            <element signature="n#!!block;n#CreateStaff#0" />
+            <element signature="e#311#342#1" />
+            <element signature="e#395#518#0" />
+            <element signature="e#651#765#0" />
+            <element signature="e#808#920#0" />
+            <element signature="e#926#985#0" />
+            <element signature="n#!!block;n#Login#0" />
+            <element signature="e#1178#1225#1" />
+            <element signature="e#1276#1393#0" />
+            <element signature="e#1470#1710#0" />
+            <element signature="e#1554#1627#0" />
+            <element signature="e#1633#1707#0" />
+            <element signature="e#1716#1778#0" />
+            <element signature="n#!!block;n#CurrentUser#0" />
+            <element signature="e#1932#2178#0" />
+            <element signature="e#2022#2095#0" />
+            <element signature="e#2101#2175#0" />
+            <element signature="e#2184#2246#0" />
+            <element signature="n#!!block;n#ChangePass#0" />
+            <element signature="e#2531#2653#0" />
+            <element signature="e#2729#2840#0" />
+            <element signature="e#2846#2906#0" />
+            <element signature="n#!!block;n#ChangeInfo#0" />
+            <element signature="e#3108#3230#0" />
+            <element signature="e#3269#3380#0" />
+            <element signature="e#3386#3446#0" />
+            <element signature="n#!!block;n#HardDelete#0" />
+            <element signature="e#3516#3605#1" />
+            <element signature="e#3657#3779#0" />
+            <element signature="e#3826#4055#0" />
+            <element signature="e#3899#3972#0" />
+            <element signature="e#3978#4052#0" />
+            <element signature="e#4061#4121#0" />
+            <element signature="n#!!block;n#SoftDelete#0" />
+            <element signature="e#4191#4280#1" />
+            <element signature="e#4332#4454#0" />
+            <element signature="e#4501#4730#0" />
+            <element signature="e#4574#4647#0" />
+            <element signature="e#4653#4727#0" />
+            <element signature="e#4736#4796#0" />
+            <element signature="e#4992#5118#0" />
+            <element signature="n#!!block;n#TechSupportDaily#0" />
+            <element signature="e#5522#5650#0" />
+            <element signature="e#5696#5812#0" />
+            <element signature="e#5818#5878#0" />
+            <element signature="n#!!block;n#AfterSaleDaily#0" />
+            <element signature="e#6065#6191#0" />
+            <element signature="e#6235#6349#0" />
+            <element signature="e#6355#6415#0" />
+            <element signature="n#!!block;n#DevelopDaily#0" />
+            <element signature="e#6600#6724#0" />
+            <element signature="e#6766#6878#0" />
+            <element signature="e#6884#6944#0" />
+            <element signature="n#!!block;n#ProductDaily#0" />
+            <element signature="e#7129#7253#0" />
+            <element signature="e#7295#7407#0" />
+            <element signature="e#7413#7473#0" />
+            <element signature="n#!!block;n#OfficeDaily#0" />
+            <element signature="e#7657#7780#0" />
+            <element signature="e#7821#7932#0" />
+            <element signature="e#7938#7998#0" />
+            <element signature="n#!!block;n#FinanceDaily#0" />
+            <element signature="e#8183#8307#0" />
+            <element signature="e#8349#8461#0" />
+            <element signature="e#8467#8527#0" />
+            <element signature="n#!!block;n#AddWeeklySummary#0" />
+            <element signature="e#8727#8855#0" />
+            <element signature="e#8909#9025#0" />
+            <element signature="e#9031#9091#0" />
+            <element signature="n#!!block;n#AddWeeklyPlan#0" />
+            <element signature="e#9285#9410#0" />
+            <element signature="e#9461#9574#0" />
+            <element signature="e#9580#9640#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/mysql/setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/mysql/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/mysql/tables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="57" selection-start-column="57" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/mysql/privileges.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pm2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/mysql/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

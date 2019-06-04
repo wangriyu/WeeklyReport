@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  weekly-mysql:
+    build: ./mysql/
+    container_name: 'weekly_mysql'
+    ports:
+      - 3306:3306
+    restart: always
+    volumes:
+      - /data/weekly-mysql/data:/var/lib/mysql
+    environment:
+      TZ: "Asia/Shanghai"
+    networks:
+      - elk
+
+  weekly-server:
+    build: ../beego-server/
+    container_name: 'weekly_server'
+    ports:
+      - 8080:8080
+    restart: always
+    networks:
+      - elk
+
+  weekly-web:
+    image: nginx
+    ports:
+      - 8081:80
+    container_name: 'weekly_web'
+    restart: always
+    volumes:
+      - ../antd-ui/dist:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - elk
+
+networks:
+  elk:
+    driver: bridge
