@@ -12,3 +12,6 @@ $ go mod vendor
 $ cd ../deploy
 $ docker-compose up -d
 ```
+
+web: localhost:8081
+account: admin/123456789

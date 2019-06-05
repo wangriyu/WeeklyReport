@@ -1,0 +1,17 @@
+antd-ui/dist
+antd-ui/.vscode
+antd-ui/npm-debug.log*
+antd-ui/yarn-error.log
+antd-ui/yarn.lock
+antd-ui/package-lock.json
+antd-ui/**/node_modules
+
+.DS_Store
+.vscode
+**/.idea
+
+beego-server/logs
+beego-server/tmp
+beego-server/vendor
+
+samples

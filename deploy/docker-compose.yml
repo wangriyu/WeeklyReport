@@ -19,6 +19,8 @@ services:
     container_name: 'weekly_server'
     ports:
       - 8080:8080
+    volumes:
+      - /data/weekly-server/log:/go/src/beego-server/logs
     restart: always
     networks:
       - elk

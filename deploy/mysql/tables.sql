@@ -1,4 +1,4 @@
-CREATE database IF NOT EXISTS  `weekly_db` default character set utf8mb4;
+CREATE database IF NOT EXISTS `weekly_db` default character set utf8mb4;
 USE `weekly_db`;
 
 CREATE TABLE IF NOT EXISTS `staff` (
