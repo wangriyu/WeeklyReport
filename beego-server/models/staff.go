@@ -5,9 +5,10 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"github.com/astaxie/beego"
 	"strings"
 	"time"
+
+	"github.com/astaxie/beego"
 
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
@@ -27,7 +28,7 @@ const (
 	GuestStatus                // 初始状态
 	NormalStatus               // 正常状态
 	_
-	BossStatus  // 总工状态
+	BossStatus // 总工状态
 	_
 	AdminStatus = 5 // admin 状态，用于区分
 )
@@ -72,8 +73,6 @@ func (staff *StaffRequest) Create() (int64, error) {
 		case BossRole:
 			status = BossStatus
 		}
-	} else {
-		staff.Role = GuestRole
 	}
 	res, err := o.Raw(
 		"INSERT INTO staff(nickname,password,name,join_date,mobile,mail,department,role,status) VALUES(?,?,?,?,?,?,?,?,?)",
@@ -639,9 +638,9 @@ type AddWeeklyPlanRequest struct {
 
 func AddWeeklyPlan(req AddWeeklyPlanRequest) error {
 	var (
-		err error
-		res sql.Result
-		o   = orm.NewOrm()
+		err   error
+		res   sql.Result
+		o     = orm.NewOrm()
 		exist uint
 	)
 

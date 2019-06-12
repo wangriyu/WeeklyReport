@@ -1,6 +1,7 @@
 import { register } from '@/services/api';
 import { setAuthority } from '@/utils/authority';
 import { reloadAuthorized } from '@/utils/Authorized';
+import { notification } from 'antd';
 
 export default {
   namespace: 'register',
@@ -9,23 +10,22 @@ export default {
     status: undefined,
   },
 
-  subscriptions: {
-    setup ({ dispatch }) {
-    }
-  },
-
   effects: {
     *submit({ payload }, { call, put }) {
-      console.log("register req", payload)
       const response = yield call(register, payload);
-      console.log("register res", response);
+      console.log('register submit', payload, response);
       if (response.status === 'ok') {
         yield put({
           type: 'registerHandle',
           payload: {
             data: payload,
-            res: response
+            res: response,
           },
+        });
+      } else {
+        notification.error({
+          message: '注册失败',
+          description: response.msg,
         });
       }
     },
@@ -33,8 +33,8 @@ export default {
 
   reducers: {
     registerHandle(state, { payload }) {
-      let data = payload.data;
-      data.id = payload.res.data;
+      const { data, res } = payload;
+      data.id = res.data;
       data.role = 'guest';
       delete data.password;
       delete data.confirm;
@@ -44,14 +44,14 @@ export default {
 
       return {
         ...state,
-        status: payload.res.status,
+        status: res.status,
       };
     },
     updateStatus(state, { payload }) {
       return {
         ...state,
-        status: payload
-      }
-    }
+        status: payload,
+      };
+    },
   },
 };

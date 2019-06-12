@@ -117,8 +117,8 @@ export async function register(params) {
   });
 }
 
-export async function fakeGetDepartments(params) {
-  return request('/api/departments')
+export async function fakeGetDepartments() {
+  return request('/api/departments');
 }
 
 export async function queryNotices(params = {}) {

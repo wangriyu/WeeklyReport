@@ -4,15 +4,16 @@ import { Card, Table } from 'antd';
 import DropOption from '@/components/DropOption';
 import moment from 'moment';
 import WeeklyModal from './WeeklyModal';
+import { departments } from '../../utils/variable';
 
-@connect(({ weekly, staff, user, loading }) => ({
+const departmentKeys = Object.keys(departments);
+
+@connect(({ weekly, staff, loading }) => ({
   weekly,
   staff,
-  user,
-  loading: loading.models.weekly,
-  staffLoading: loading.models.staff,
+  loading: loading.models.staff,
 }))
-class WeeklyList extends Component {
+class ManageWeekly extends Component {
   state = {
     planWeek: moment().add(1, 'weeks'),
     summaryWeek: moment(),
@@ -48,6 +49,42 @@ class WeeklyList extends Component {
       dataIndex: 'mail',
     },
     {
+      title: '部门',
+      dataIndex: 'department',
+      filters: [
+        {
+          text: departments[departmentKeys[1]],
+          value: departmentKeys[1],
+        },
+        {
+          text: departments[departmentKeys[2]],
+          value: departmentKeys[2],
+        },
+        {
+          text: departments[departmentKeys[3]],
+          value: departmentKeys[3],
+        },
+        {
+          text: departments[departmentKeys[4]],
+          value: departmentKeys[4],
+        },
+        {
+          text: departments[departmentKeys[5]],
+          value: departmentKeys[5],
+        },
+        {
+          text: departments[departmentKeys[6]],
+          value: departmentKeys[6],
+        },
+        {
+          text: departments[departmentKeys[7]],
+          value: departmentKeys[7],
+        },
+      ],
+      render: text => departments[text],
+      onFilter: (value, record) => record.department.indexOf(value) === 0,
+    },
+    {
       title: '角色',
       dataIndex: 'role',
       filterMultiple: false,
@@ -76,15 +113,11 @@ class WeeklyList extends Component {
   ];
 
   componentDidMount() {
-    const {
-      dispatch,
-      user: { currentUser },
-    } = this.props;
+    const { dispatch } = this.props;
     dispatch({
       type: 'staff/fetchStaffList',
       payload: {
         role: 'staff,leader',
-        department: currentUser.department,
       },
     });
   }
@@ -159,7 +192,6 @@ class WeeklyList extends Component {
       weekly: { weeklyPlan, weeklySummary },
       staff: { list },
       loading,
-      staffLoading,
     } = this.props;
     const { record, planWeek, summaryWeek, modalVisible } = this.state;
     const modalProps = {
@@ -184,7 +216,7 @@ class WeeklyList extends Component {
           scroll={{ x: '100%' }}
           columns={this.columns}
           dataSource={list}
-          loading={staffLoading}
+          loading={loading}
           pagination={false}
         />
         <WeeklyModal {...modalProps} />
@@ -193,4 +225,4 @@ class WeeklyList extends Component {
   }
 }
 
-export default WeeklyList;
+export default ManageWeekly;

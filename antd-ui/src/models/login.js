@@ -9,7 +9,7 @@ export default {
 
   state: {
     status: undefined,
-    type: ''
+    type: '',
   },
 
   effects: {
@@ -20,7 +20,6 @@ export default {
         type: 'changeLoginStatus',
         payload: response.status,
       });
-      // Login successfully
       if (response.status === 'ok') {
         setAuthority(response.data);
         yield put({
@@ -55,7 +54,7 @@ export default {
       });
       yield put({
         type: 'register/updateStatus',
-        payload: false
+        payload: false,
       });
       setAuthority(null);
       reloadAuthorized();

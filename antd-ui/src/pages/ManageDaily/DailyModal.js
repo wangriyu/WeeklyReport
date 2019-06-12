@@ -6,17 +6,18 @@ const DailyModal = props => {
   const {
     item,
     list,
+    modalWidth,
     loading,
+    modalVisible,
     startDate,
     endDate,
     department,
-    modalVisible,
     handleModalVisible,
     handleDateChange,
   } = props;
 
   const modalOpts = {
-    width: '800px',
+    width: modalWidth || '800px',
     title: item.name,
     footer: null,
     maskClosable: false,

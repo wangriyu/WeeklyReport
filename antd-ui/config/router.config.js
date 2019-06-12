@@ -35,7 +35,7 @@ export default [
         path: '/home',
         name: 'home',
         icon: 'home',
-        component: './Home'
+        component: './Home',
       },
 
       // Admin
@@ -50,11 +50,12 @@ export default [
             path: '/admin/staff/register-audit',
             name: 'register-audit',
             component: './Admin/RegisterAudit',
-          }, {
+          },
+          {
             path: '/admin/staff/list',
             name: 'staff-list',
             component: './Admin/ManageStaff',
-          }
+          },
         ],
       },
       // manage daily work
@@ -67,49 +68,47 @@ export default [
           {
             path: '/admin/daily/marketing',
             name: 'daily-marketing',
-            component: './Admin/MarketingDailyPlan',
-          }, {
+            component: './ManageDaily/MarketingDaily',
+          },
+          {
             path: '/admin/daily/techsupport',
             name: 'daily-techsupport',
-            component: './Admin/TechSupportDailyPlan',
-          }, {
+            component: './ManageDaily/TechSupportDaily',
+          },
+          {
             path: '/admin/daily/aftersale',
             name: 'daily-aftersale',
-            component: './Admin/AfterSaleDailyPlan',
-          }, {
+            component: './ManageDaily/AfterSaleDaily',
+          },
+          {
             path: '/admin/daily/office',
             name: 'daily-office',
-            component: './Admin/OfficeDailyPlan',
-          }, {
+            component: './ManageDaily/OfficeDaily',
+          },
+          {
             path: '/admin/daily/develop',
             name: 'daily-develop',
-            component: './Admin/DevelopDailyPlan',
-          }, {
+            component: './ManageDaily/DevelopDaily',
+          },
+          {
             path: '/admin/daily/product',
             name: 'daily-product',
-            component: './Admin/ProductDailyPlan',
-          }, {
+            component: './ManageDaily/ProductDaily',
+          },
+          {
             path: '/admin/daily/finance',
             name: 'daily-finance',
-            component: './Admin/FinanceDailyPlan',
-          }
+            component: './ManageDaily/FinanceDaily',
+          },
         ],
       },
-      // manage departments
-      // {
-      //   path: '/admin/departments',
-      //   name: 'department-list',
-      //   icon: 'sliders',
-      //   authority: ['admin'],
-      //   component: './Admin/ManageDepartments'
-      // },
       // manage weekly work
       {
         path: '/admin/weekly',
         name: 'weekly-list',
         icon: 'box-plot',
         authority: ['admin'],
-        component: './Admin/ManageWeeklyPlan'
+        component: './ManageWeekly',
       },
       // manage annually work
       {
@@ -117,7 +116,7 @@ export default [
         name: 'annually-list',
         icon: 'fund',
         authority: ['admin'],
-        component: './Admin/ManageAnnuallyPlan'
+        component: './ManageAnnually',
       },
 
       // staff
@@ -127,7 +126,7 @@ export default [
         name: 'staff-daily',
         icon: 'schedule',
         authority: ['staff'],
-        component: './Staff/DailyWork'
+        component: './SubmitDaily',
       },
       // weekly
       {
@@ -135,14 +134,14 @@ export default [
         name: 'staff-weekly',
         icon: 'box-plot',
         authority: ['staff'],
-        component: './Staff/WeeklyWork'
+        component: './SubmitWeekly',
       },
       {
         path: '/staff/weeklyList',
         name: 'staff-weekly-list',
         icon: 'container',
         authority: ['staff'],
-        component: './Staff/WeeklyList'
+        component: './Staff/WeeklyList',
       },
       // monthly
       {
@@ -150,7 +149,7 @@ export default [
         name: 'staff-monthly',
         icon: 'fund',
         authority: ['staff'],
-        component: './Staff/MonthlyWork'
+        component: './Staff/MonthlyWork',
       },
 
       // leader
@@ -160,7 +159,7 @@ export default [
         name: 'leader-daily',
         icon: 'schedule',
         authority: ['leader'],
-        component: './Leader/DailyWork'
+        component: './SubmitDaily',
       },
       // weekly
       {
@@ -168,14 +167,14 @@ export default [
         name: 'leader-weekly',
         icon: 'book',
         authority: ['leader'],
-        component: './Leader/WeeklyWork'
+        component: './SubmitWeekly',
       },
       {
         path: '/leader/weekly-list',
         name: 'leader-weekly-list',
         icon: 'box-plot',
         authority: ['leader'],
-        component: './Leader/WeeklyList'
+        component: './Leader/WeeklyList',
       },
       // monthly
       {
@@ -183,7 +182,7 @@ export default [
         name: 'leader-monthly',
         icon: 'project',
         authority: ['leader'],
-        component: './Leader/MonthlyWork'
+        component: './Leader/MonthlyWork',
       },
       // manage annually work
       {
@@ -191,7 +190,7 @@ export default [
         name: 'annually-list',
         icon: 'fund',
         authority: ['leader'],
-        component: './Leader/ManageAnnuallyPlan'
+        component: './ManageAnnually',
       },
 
       // boss
@@ -205,32 +204,38 @@ export default [
           {
             path: '/boss/daily/marketing',
             name: 'daily-marketing',
-            component: './Boss/MarketingDailyPlan',
-          }, {
+            component: './ManageDaily/MarketingDaily',
+          },
+          {
             path: '/boss/daily/techsupport',
             name: 'daily-techsupport',
-            component: './Boss/TechSupportDailyPlan',
-          }, {
+            component: './ManageDaily/TechSupportDaily',
+          },
+          {
             path: '/boss/daily/aftersale',
             name: 'daily-aftersale',
-            component: './Admin/AfterSaleDailyPlan',
-          }, {
+            component: './ManageDaily/AfterSaleDaily',
+          },
+          {
             path: '/boss/daily/office',
             name: 'daily-office',
-            component: './Boss/OfficeDailyPlan',
-          }, {
+            component: './ManageDaily/OfficeDaily',
+          },
+          {
             path: '/boss/daily/develop',
             name: 'daily-develop',
-            component: './Boss/DevelopDailyPlan',
-          }, {
+            component: './ManageDaily/DevelopDaily',
+          },
+          {
             path: '/boss/daily/product',
             name: 'daily-product',
-            component: './Boss/ProductDailyPlan',
-          }, {
+            component: './ManageDaily/ProductDaily',
+          },
+          {
             path: '/boss/daily/finance',
             name: 'daily-finance',
-            component: './Boss/FinanceDailyPlan',
-          }
+            component: './ManageDaily/FinanceDaily',
+          },
         ],
       },
       // manage weekly work
@@ -239,7 +244,7 @@ export default [
         name: 'weekly-list',
         icon: 'box-plot',
         authority: ['boss'],
-        component: './Boss/ManageWeeklyPlan'
+        component: './ManageWeekly',
       },
       // manage annually work
       {
@@ -247,7 +252,7 @@ export default [
         name: 'annually-list',
         icon: 'fund',
         authority: ['boss'],
-        component: './Boss/ManageAnnuallyPlan'
+        component: './ManageAnnually',
       },
 
       {

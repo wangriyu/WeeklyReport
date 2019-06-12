@@ -4,10 +4,11 @@ import (
 	"fmt"
 
 	_ "beego-server/routers"
+	_ "github.com/go-sql-driver/mysql"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
-	_ "github.com/go-sql-driver/mysql"
 )
 
 func init() {
@@ -24,10 +25,14 @@ func init() {
 	if err := orm.RegisterDataBase("default", "mysql", dataSource); err != nil {
 		panic(err)
 	}
-	orm.Debug = true
+	enableOrmDebug, err := beego.AppConfig.Bool("orm_debug")
+	if err != nil {
+		panic(err)
+	}
+	orm.Debug = enableOrmDebug
 
 	beego.BConfig.WebConfig.Session.SessionCookieLifeTime = 60 * 60 * 24 * 7 // cookie 生命周期 7 天 不会变
-	beego.BConfig.WebConfig.Session.SessionGCMaxLifetime = 60 * 60 * 24 * 5   // session 生命周期 5 天 刷新会变
+	beego.BConfig.WebConfig.Session.SessionGCMaxLifetime = 60 * 60 * 24 * 5  // session 生命周期 5 天 刷新会变
 	beego.BConfig.WebConfig.Session.SessionProvider = "file"
 	beego.BConfig.WebConfig.Session.SessionProviderConfig = "./tmp"
 

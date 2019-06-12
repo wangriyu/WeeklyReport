@@ -165,7 +165,7 @@ type MarketingMonthlyResult struct {
 func QueryMarketingMonthlyByID(id string, start, end time.Time) ([]MarketingMonthlyResult, error) {
 	o := orm.NewOrm()
 	var result []MarketingMonthlyResult
-	num, err := o.Raw("SELECT date,hygiene,meeting,work FROM marketing_daily WHERE executor = ? AND date >= ? AND date <= ?", id, start, end).QueryRows(&result)
+	num, err := o.Raw("SELECT date,hygiene,meeting,work FROM marketing_daily WHERE executor = ? AND date >= ? AND date <= ? ORDER BY date", id, start, end).QueryRows(&result)
 	if err != nil {
 		return result, err
 	}
@@ -191,7 +191,7 @@ func QueryTechSupportMonthly(id string, start, end time.Time) ([]MonthlyResult, 
 
 	var items []MonthlyResult
 	num, err := o.Raw(
-		"SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5,work_item6,work_item7 FROM techsupport_daily WHERE executor = ? AND date >= ? AND date <= ?",
+		"SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5,work_item6,work_item7 FROM techsupport_daily WHERE executor = ? AND date >= ? AND date <= ? ORDER BY date",
 		id,
 		start,
 		end,
@@ -208,7 +208,7 @@ func QueryAfterSaleMonthly(id string, start, end time.Time) ([]MonthlyResult, er
 	o := orm.NewOrm()
 
 	var items []MonthlyResult
-	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5,work_item6,work_item7,work_item8 FROM aftersale_daily WHERE executor = ? AND date >= ? AND date <= ?", id, start, end).QueryRows(&items)
+	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5,work_item6,work_item7,work_item8 FROM aftersale_daily WHERE executor = ? AND date >= ? AND date <= ? ORDER BY date", id, start, end).QueryRows(&items)
 	if err != nil {
 		return items, err
 	}
@@ -221,7 +221,7 @@ func QueryDevelopMonthly(id string, start, end time.Time) ([]MonthlyResult, erro
 	o := orm.NewOrm()
 
 	var items []MonthlyResult
-	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5,work_item6,work_item7 FROM develop_daily WHERE executor = ? AND date >= ? AND date <= ?", id, start, end).QueryRows(&items)
+	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5,work_item6,work_item7 FROM develop_daily WHERE executor = ? AND date >= ? AND date <= ? ORDER BY date", id, start, end).QueryRows(&items)
 	if err != nil {
 		return items, err
 	}
@@ -234,7 +234,7 @@ func QueryProductMonthly(id string, start, end time.Time) ([]MonthlyResult, erro
 	o := orm.NewOrm()
 
 	var items []MonthlyResult
-	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4 FROM product_daily WHERE executor = ? AND date >= ? AND date <= ?", id, start, end).QueryRows(&items)
+	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4 FROM product_daily WHERE executor = ? AND date >= ? AND date <= ? ORDER BY date", id, start, end).QueryRows(&items)
 	if err != nil {
 		return items, err
 	}
@@ -247,7 +247,7 @@ func QueryOfficeMonthly(id string, start, end time.Time) ([]MonthlyResult, error
 	o := orm.NewOrm()
 
 	var items []MonthlyResult
-	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5,work_item6 FROM office_daily WHERE executor = ? AND date >= ? AND date <= ?", id, start, end).QueryRows(&items)
+	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5,work_item6 FROM office_daily WHERE executor = ? AND date >= ? AND date <= ? ORDER BY date", id, start, end).QueryRows(&items)
 	if err != nil {
 		return items, err
 	}
@@ -260,7 +260,7 @@ func QueryFinanceMonthly(id string, start, end time.Time) ([]MonthlyResult, erro
 	o := orm.NewOrm()
 
 	var items []MonthlyResult
-	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5 FROM finance_daily WHERE executor = ? AND date >= ? AND date <= ?", id, start, end).QueryRows(&items)
+	num, err := o.Raw("SELECT date,work_item1,work_item2,work_item3,work_item4,work_item5 FROM finance_daily WHERE executor = ? AND date >= ? AND date <= ? ORDER BY date", id, start, end).QueryRows(&items)
 	if err != nil {
 		return items, err
 	}

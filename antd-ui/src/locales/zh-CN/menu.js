@@ -19,7 +19,7 @@ export default {
   'menu.annually-list': '年度计划排班表',
   'menu.staff-daily': '每日工作汇报',
   'menu.staff-weekly': '每周工作汇报',
-  'menu.staff-weekly-list': '周报历时清单',
+  'menu.staff-weekly-list': '周报历史清单',
   'menu.staff-monthly': '月度工作汇总',
   'menu.leader-daily': '每日工作汇报',
   'menu.leader-weekly': '每周工作汇报',
