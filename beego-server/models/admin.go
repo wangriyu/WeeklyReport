@@ -361,7 +361,7 @@ func QueryAnnuallyList() ([]Annually, error) {
 	o := orm.NewOrm()
 
 	var result []Annually
-	_, err := o.Raw("SELECT id,title,goal,plan FROM annually WHERE status > ?", DimissionStatus).QueryRows(&result)
+	_, err := o.Raw("SELECT id,title,goal,plan FROM annually WHERE status > ? ORDER BY title DESC", DimissionStatus).QueryRows(&result)
 	if err != nil {
 		return result, err
 	}
@@ -408,7 +408,7 @@ func QueryAnnuallyItemList(id string) ([]AnnuallyItem, error) {
 	o := orm.NewOrm()
 
 	var result []AnnuallyItem
-	_, err := o.Raw("SELECT id,pid,title,description,priority,deadline,leader,progress,result FROM annually_item WHERE pid = ?", id).QueryRows(&result)
+	_, err := o.Raw("SELECT id,pid,title,description,priority,deadline,leader,progress,result FROM annually_item WHERE pid = ? ORDER BY priority DESC", id).QueryRows(&result)
 	if err != nil {
 		return result, err
 	}
