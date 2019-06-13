@@ -102,7 +102,7 @@ class MonthlyWork extends Component {
     this.setState({ modalVisible: !this.state.modalVisible });
   };
 
-  handleDateChange = (id, start, end) => {
+  handleDateChange = (start, end, id) => {
     const {
       dispatch,
       user: { currentUser },

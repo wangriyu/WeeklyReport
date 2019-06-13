@@ -14,15 +14,15 @@ const MonthlyPanel = props => {
   const renderBadge = text => {
     switch (text) {
       case 1:
-        return <Badge color="green" text="√" />;
+        return <Badge color='green' text='√' />;
       case 2:
-        return <Badge color="red" text="×" />;
+        return <Badge color='red' text='×' />;
       case 3:
-        return <Badge color="grey" text="○" />;
+        return <Badge color='grey' text='○' />;
       case 4:
-        return <Badge color="blue" text="☐" />;
+        return <Badge color='blue' text='☐' />;
       case 5:
-        return <Badge color="#efefef" text="▽" />;
+        return <Badge color='#efefef' text='▽' />;
       default:
         return null;
     }
@@ -307,7 +307,7 @@ const MonthlyPanel = props => {
       if (now.isBetween(start, end)) {
         end = now.format('YYYYMMDD');
       }
-      handleDateChange(item.id, start, end);
+      handleDateChange(start, end, item.id);
     }
   };
 
@@ -315,7 +315,7 @@ const MonthlyPanel = props => {
     if (date[0] && date[1]) {
       const start = date[0].format('YYYYMMDD');
       const end = date[1].format('YYYYMMDD');
-      handleDateChange(item.id, start, end);
+      handleDateChange(start, end, item.id);
     }
   };
 
@@ -337,9 +337,9 @@ const MonthlyPanel = props => {
       <div style={{ marginBottom: '10px', display: 'flex', justifyContent: 'space-between' }}>
         <div>
           <RangePicker
-            size="small"
+            size='small'
             allowClear={false}
-            format="YYYYMMDD"
+            format='YYYYMMDD'
             disabledDate={current => current > moment().endOf('day')}
             value={
               !startDate || !endDate
@@ -349,17 +349,17 @@ const MonthlyPanel = props => {
             onChange={handleRangePick}
           />
           <MonthPicker
-            size="small"
+            size='small'
             allowClear={false}
             style={{ marginLeft: '10px' }}
-            format="YYYYMM"
+            format='YYYYMM'
             value={!startDate || !endDate ? null : moment(startDate, 'YYYYMM')}
             disabledDate={current => current > moment().endOf('month')}
             onChange={handleMonthPick}
-            placeholder="选择月份"
+            placeholder='选择月份'
           />
         </div>
-        <Button size="small" type="primary" onClick={exportTable}>
+        <Button size='small' type='primary' onClick={exportTable}>
           导出
         </Button>
       </div>
@@ -370,10 +370,10 @@ const MonthlyPanel = props => {
             {item.name}自检记录表
           </div>
         )}
-        id="monthly-table"
+        id='monthly-table'
         rowKey={record => record.id}
         bordered
-        size="small"
+        size='small'
         className={styles.smallTable}
         scroll={{ x: '100%' }}
         columns={getModalColumns(department)}

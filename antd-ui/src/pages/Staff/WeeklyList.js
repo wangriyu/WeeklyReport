@@ -4,10 +4,10 @@ import { Card } from 'antd';
 import moment from 'moment';
 import WeeklyPanel from '../WeeklyPanel';
 
-@connect(({ staffWeekly, user, loading }) => ({
-  staffWeekly,
+@connect(({ weekly, user, loading }) => ({
+  weekly,
   user,
-  loading: loading.models.staffWeekly,
+  loading: loading.models.weekly,
 }))
 class WeeklyList extends Component {
   state = {
@@ -29,7 +29,7 @@ class WeeklyList extends Component {
       planWeek: week,
     });
     dispatch({
-      type: 'staffWeekly/fetchWeeklyPlan',
+      type: 'weekly/fetchWeeklyPlan',
       payload: {
         id: currentUser.id,
         planWeek: week.format('YYYY-wo'),
@@ -46,7 +46,7 @@ class WeeklyList extends Component {
       summaryWeek: week,
     });
     dispatch({
-      type: 'staffWeekly/fetchWeeklySummary',
+      type: 'weekly/fetchWeeklySummary',
       payload: {
         id: currentUser.id,
         summaryWeek: week.format('YYYY-wo'),
@@ -58,7 +58,7 @@ class WeeklyList extends Component {
     const {
       loading,
       user: { currentUser },
-      staffWeekly: { weeklyPlan, weeklySummary },
+      weekly: { weeklyPlan, weeklySummary },
     } = this.props;
     const { planWeek, summaryWeek } = this.state;
     const weeklyPanelProps = {

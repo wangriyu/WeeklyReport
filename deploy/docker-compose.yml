@@ -22,7 +22,7 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - /data/weekly-server/log:/go/src/beego-server/logs
+      - /data/weekly-server/log:/go/logs
     environment:
       TZ: "Asia/Shanghai"
     restart: always

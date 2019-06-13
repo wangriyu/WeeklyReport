@@ -47,7 +47,7 @@ class OfficeDaily extends Component {
     this.setState({ modalVisible: !this.state.modalVisible });
   };
 
-  handleDateChange = (id, start, end) => {
+  handleDateChange = (start, end, id) => {
     const { dispatch } = this.props;
     this.setState({
       startDate: start,
