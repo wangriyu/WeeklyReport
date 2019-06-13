@@ -8,13 +8,13 @@ services:
       - 3306:3306
     restart: always
     volumes:
-      - /d/data/weekly-mysql/data:/var/lib/mysql
+      - /data/weekly-mysql/data:/var/lib/mysql
       - ./mysql:/docker-entrypoint-initdb.d/
     environment:
       MYSQL_ROOT_PASSWORD: "246810"
       TZ: "Asia/Shanghai"
     networks:
-      - elk
+      - weekly
 
   weekly-server:
     build: ../beego-server/
@@ -22,12 +22,12 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - /d/data/weekly-server/log:/go/logs
+      - /data/weekly-server/log:/go/logs
     environment:
       TZ: "Asia/Shanghai"
     restart: always
     networks:
-      - elk
+      - weekly
     depends_on:
       - weekly-mysql
 
@@ -40,14 +40,14 @@ services:
     volumes:
       - ../antd-ui/dist:/usr/share/nginx/html
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - /d/data/weekly-web/log:/var/log/nginx
+      - /data/weekly-web/log:/var/log/nginx
     environment:
       TZ: "Asia/Shanghai"
     networks:
-      - elk
+      - weekly
     depends_on:
       - weekly-server
 
 networks:
-  elk:
+  weekly:
     driver: bridge
