@@ -9,7 +9,7 @@ services:
     restart: always
     volumes:
       - /data/weekly-mysql/data:/var/lib/mysql
-      - "./mysql:/docker-entrypoint-initdb.d/"
+      - ./mysql:/docker-entrypoint-initdb.d/
     environment:
       MYSQL_ROOT_PASSWORD: "246810"
       TZ: "Asia/Shanghai"
