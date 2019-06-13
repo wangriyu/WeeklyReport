@@ -35,11 +35,9 @@ class AfterSaleDaily extends Component {
   enableModal = record => {
     this.setState({ record, modalVisible: true });
     this.handleDateChange(
+      moment().startOf('month').format('YYYYMMDD'),
+      moment().format('YYYYMMDD'),
       record.id,
-      moment()
-        .startOf('month')
-        .format('YYYYMMDD'),
-      moment().format('YYYYMMDD')
     );
   };
 
