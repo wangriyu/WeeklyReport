@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
-import { formatMessage, FormattedMessage } from 'umi-plugin-react/locale';
-import { Form, Input, Button, DatePicker } from 'antd';
-import { connect } from 'dva';
-import styles from './BaseView.less';
-import moment from 'moment';
+import { connect }          from 'dva';
+import moment               from 'moment';
+import {
+  formatMessage,
+  FormattedMessage,
+}                           from 'umi-plugin-react/locale';
+import {
+  Form,
+  Input,
+  Button,
+  DatePicker,
+}                           from 'antd';
+import styles               from './BaseView.less';
 
 const FormItem = Form.Item;
 
@@ -20,13 +28,13 @@ class BaseView extends Component {
   handleSubmit = () => {
     const { form, dispatch } = this.props;
     form.validateFields((err, fieldsValue) => {
-      if (err) {
-        return
-      }
-      fieldsValue['joinDate'] = fieldsValue.joinDate.format('YYYY-MM-DD');
+      if (err) { return }
+
+      const payload = fieldsValue;
+      payload.joinDate = fieldsValue.joinDate.format('YYYY-MM-DD');
       dispatch({
         type: 'user/changeInfo',
-        payload: fieldsValue
+        payload
       })
     })
   };
@@ -36,11 +44,11 @@ class BaseView extends Component {
     return (
       <div className={styles.baseView} ref={this.getViewDom}>
         <div className={styles.left}>
-          <Form layout="vertical" hideRequiredMark>
-            <FormItem label={'账户名'}>
+          <Form layout='vertical' hideRequiredMark>
+            <FormItem label='账户名'>
               {
                 form.getFieldDecorator('nickname', {
-                  initialValue: currentUser['nickname'],
+                  initialValue: currentUser.nickname,
                   rules: [{
                     required: true,
                     message: formatMessage({ id: 'validation.nickname.required' }),
@@ -49,43 +57,43 @@ class BaseView extends Component {
                     message: formatMessage({ id: 'validation.nickname.overflow' }),
                   }],
                 })(
-                  <Input size="large" placeholder={ formatMessage({ id: 'form.nickname.placeholder' }) }/>
+                  <Input size='large' placeholder={formatMessage({ id: 'form.nickname.placeholder' })} />
                 )
               }
             </FormItem>
-            <Form.Item label={'姓名'} style={ { marginBottom: 0 } }>
-              <FormItem style={ { display: 'inline-block' } }>
+            <Form.Item label='姓名' style={{ marginBottom: 0 }}>
+              <FormItem style={{ display: 'inline-block' }}>
                 {
                   form.getFieldDecorator('name', {
-                    initialValue: currentUser['name'],
+                    initialValue: currentUser.name,
                     rules: [{
                       required: true,
                       message: formatMessage({ id: 'validation.name.required' }),
                     }],
                   })(
-                    <Input size="large" placeholder={ formatMessage({ id: 'form.name.placeholder' }) }/>
+                    <Input size='large' placeholder={formatMessage({ id: 'form.name.placeholder' })} />
                   )
                 }
               </FormItem>
-              <FormItem style={ { display: 'inline-block', marginLeft: '5px' } }>
+              <FormItem style={{ display: 'inline-block', marginLeft: '5px' }}>
                 {
                   form.getFieldDecorator('joinDate', {
-                    initialValue: moment(currentUser['joinDate'], 'YYYY-MM-DD'),
+                    initialValue: moment(currentUser.joinDate, 'YYYY-MM-DD'),
                     rules: [{
                       type: 'object',
                       required: true,
                       message: formatMessage({ id: 'validation.joinDate.required' }),
                     }],
                   })(
-                    <DatePicker size="large" placeholder={ formatMessage({ id: 'form.joinDate.placeholder' }) }/>
+                    <DatePicker size='large' placeholder={formatMessage({ id: 'form.joinDate.placeholder' })} />
                   )
                 }
               </FormItem>
             </Form.Item>
-            <FormItem label={'手机'}>
+            <FormItem label='手机'>
               {
                 form.getFieldDecorator('mobile', {
-                  initialValue: currentUser['mobile'],
+                  initialValue: currentUser.mobile,
                   rules: [{
                     required: true,
                     message: formatMessage({ id: 'validation.phone-number.required' }),
@@ -94,14 +102,14 @@ class BaseView extends Component {
                     message: formatMessage({ id: 'validation.phone-number.wrong-format' }),
                   }],
                 })(
-                  <Input size="large" placeholder={ formatMessage({ id: 'form.phone-number.placeholder' }) }/>
+                  <Input size='large' placeholder={formatMessage({ id: 'form.phone-number.placeholder' })} />
                 )
               }
             </FormItem>
-            <FormItem label={'邮箱'}>
+            <FormItem label='邮箱'>
               {
                 form.getFieldDecorator('mail', {
-                  initialValue: currentUser['mail'],
+                  initialValue: currentUser.mail,
                   rules: [{
                     required: true,
                     message: formatMessage({ id: 'validation.email.required' }),
@@ -110,14 +118,14 @@ class BaseView extends Component {
                     message: formatMessage({ id: 'validation.email.wrong-format' }),
                   }],
                 })(
-                  <Input size="large" placeholder={ formatMessage({ id: 'form.email.placeholder' }) }/>
+                  <Input size='large' placeholder={formatMessage({ id: 'form.email.placeholder' })} />
                 )
               }
             </FormItem>
-            <Button type="primary" onClick={this.handleSubmit}>
+            <Button type='primary' onClick={this.handleSubmit}>
               <FormattedMessage
-                id="app.settings.basic.update"
-                defaultMessage="Update Information"
+                id='app.settings.basic.update'
+                defaultMessage='Update Information'
               />
             </Button>
           </Form>

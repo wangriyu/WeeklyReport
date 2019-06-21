@@ -51,9 +51,9 @@ class LoginPage extends Component {
           <Password
             name="password"
             placeholder={ `${formatMessage({ id: 'app.login.password' })}: guest` }
-            rules={ [{
+            rules={[{
               required: true, message: formatMessage({ id: 'validation.password.required' }),
-            }] }
+            }]}
             onPressEnter={e => {
               e.preventDefault();
               this.loginForm.validateFields(this.handleSubmit);

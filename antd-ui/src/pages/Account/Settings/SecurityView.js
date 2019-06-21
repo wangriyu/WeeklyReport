@@ -1,26 +1,33 @@
-import React, { Component }                from 'react';
-import { formatMessage, FormattedMessage } from 'umi-plugin-react/locale';
+import React, { Component } from 'react';
+import { connect }          from 'dva';
 import {
-  Button, Input, Form, Popover, Progress,
-} from 'antd';
-import styles                              from './BaseView.less';
-import { connect }                         from 'dva';
+  formatMessage,
+  FormattedMessage,
+}                           from 'umi-plugin-react/locale';
+import {
+  Button,
+  Input,
+  Form,
+  Popover,
+  Progress,
+}                           from 'antd';
+import styles               from './BaseView.less';
 
 const FormItem = Form.Item;
 const passwordStatusMap = {
   ok: (
-    <div className={ styles.success }>
-      <FormattedMessage id="validation.password.strength.strong"/>
+    <div className={styles.success}>
+      <FormattedMessage id='validation.password.strength.strong' />
     </div>
   ),
   pass: (
-    <div className={ styles.warning }>
-      <FormattedMessage id="validation.password.strength.medium"/>
+    <div className={styles.warning}>
+      <FormattedMessage id='validation.password.strength.medium' />
     </div>
   ),
   poor: (
-    <div className={ styles.error }>
-      <FormattedMessage id="validation.password.strength.short"/>
+    <div className={styles.error}>
+      <FormattedMessage id='validation.password.strength.short' />
     </div>
   ),
 };
@@ -31,7 +38,7 @@ const passwordProgressMap = {
 };
 
 @connect(({ user, loading }) => ({
-  user: user,
+  user,
   loading: loading.models.user
 }))
 @Form.create()
@@ -59,13 +66,13 @@ class SecurityView extends Component {
     const value = form.getFieldValue('newPass');
     const passwordStatus = this.getPasswordStatus();
     return value && value.length ? (
-      <div className={ styles[`progress-${passwordStatus}`] }>
+      <div className={styles[`progress-${passwordStatus}`]}>
         <Progress
-          status={ passwordProgressMap[passwordStatus] }
-          className={ styles.progress }
-          strokeWidth={ 6 }
-          percent={ value.length * 10 > 100 ? 100 : value.length * 10 }
-          showInfo={ false }
+          status={passwordProgressMap[passwordStatus]}
+          className={styles.progress}
+          strokeWidth={6}
+          percent={value.length * 10 > 100 ? 100 : value.length * 10}
+          showInfo={false}
         />
       </div>
     ) : null;
@@ -87,8 +94,9 @@ class SecurityView extends Component {
   };
 
   checkPassword = (rule, value, callback) => {
+    const { form } = this.props;
     const { visible, confirmDirty } = this.state;
-    const oldPass = this.props.form.getFieldValue('oldPass');
+    const oldPass = form.getFieldValue('oldPass');
 
     if (!value) {
       this.setState({
@@ -114,7 +122,6 @@ class SecurityView extends Component {
       if (value.length < 6) {
         callback('error');
       } else {
-        const { form } = this.props;
         if (value && confirmDirty) {
           form.validateFields(['confirm'], { force: true });
         }
@@ -145,8 +152,8 @@ class SecurityView extends Component {
     return (
       <div className={styles.baseView}>
         <div className={styles.left}>
-          <Form layout="vertical" hideRequiredMark>
-            <FormItem label={'原密码'}>
+          <Form layout='vertical' hideRequiredMark>
+            <FormItem label='原密码'>
               {
                 getFieldDecorator('oldPass', {
                   rules: [{
@@ -154,23 +161,26 @@ class SecurityView extends Component {
                     message: formatMessage({ id: 'validation.phone-number.required' }),
                   }],
                 })(
-                  <Input size="large" type="password" placeholder={ formatMessage({ id: 'form.change-password.placeholder' }) }/>
+                  <Input size='large' type='password' placeholder={formatMessage({ id: 'form.change-password.placeholder' })} />
                 )
               }
             </FormItem>
-            <FormItem help={ help } label={'新密码'}>
+            <FormItem help={help} label='新密码'>
               <Popover
-                getPopupContainer={ node => node.parentNode }
-                content={ <div style={ { padding: '4px 0' } }>
-                  { passwordStatusMap[this.getPasswordStatus()] }
-                  { this.renderPasswordProgress() }
-                  <div style={ { marginTop: 10 } }>
-                    <FormattedMessage id="validation.password.strength.msg"/>
+                getPopupContainer={node => node.parentNode}
+                content={
+                  <div style={{ padding: '4px 0' }}>
+                    { passwordStatusMap[this.getPasswordStatus()] }
+                    { this.renderPasswordProgress() }
+                    <div style={{ marginTop: 10 }}>
+                      <FormattedMessage id='validation.password.strength.msg' />
+                    </div>
                   </div>
-                </div> }
-                overlayStyle={ { width: 240 } }
-                placement="right"
-                visible={ visible }>
+                }
+                overlayStyle={{ width: 240 }}
+                placement='right'
+                visible={visible}
+              >
                 {
                   getFieldDecorator('newPass', {
                     rules: [{
@@ -178,15 +188,15 @@ class SecurityView extends Component {
                     }],
                   })(
                     <Input
-                      size="large"
-                      type="password"
-                      placeholder={ formatMessage({ id: 'form.change-password.placeholder' }) }
+                      size='large'
+                      type='password'
+                      placeholder={formatMessage({ id: 'form.change-password.placeholder' })}
                     />
                   )
                 }
               </Popover>
             </FormItem>
-            <FormItem label={'确认密码'}>
+            <FormItem label='确认密码'>
               {
                 getFieldDecorator('confirm', {
                   rules: [{
@@ -197,18 +207,18 @@ class SecurityView extends Component {
                   }],
                 })(
                   <Input
-                    size="large"
-                    type="password"
-                    placeholder={ formatMessage({ id: 'form.confirm-password.placeholder' }) }
+                    size='large'
+                    type='password'
+                    placeholder={formatMessage({ id: 'form.confirm-password.placeholder' })}
                     onBlur={this.handleConfirmBlur}
                   />
                 )
               }
             </FormItem>
-            <Button type="primary" onClick={this.handleSubmit}>
+            <Button type='primary' onClick={this.handleSubmit}>
               <FormattedMessage
-                id="app.settings.password.update"
-                defaultMessage="Change PassWord"
+                id='app.settings.password.update'
+                defaultMessage='Change PassWord'
               />
             </Button>
           </Form>
